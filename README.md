@@ -1,8 +1,8 @@
-# KeyvFS
+# KeyFS
 
-Simple filesystem based storage for the [KeyV](https://keyv.org) key-value store. Each namespace is stored as a separate folder full of JSON files.
+Simple filesystem based storage for the [Keyv](https://keyv.org) key-value store. Each namespace is stored as a separate folder full of JSON files.
 
-The existing [key-file](https://github.com/zaaack/keyv-file) module had some quirky decisions — in particular, every namespace was stored in a single JSON file, making large piles of data a little punishing.
+The existing [keyv-file](https://github.com/zaaack/keyv-file) module had some quirky decisions — in particular, every namespace was stored in a single JSON file, making large piles of data a little punishing.
 
 ## Usage
 
