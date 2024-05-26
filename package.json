@@ -1,7 +1,7 @@
 {
   "name": "keyv-fs",
   "version": "0.1.0",
-  "description": "FS-Jetpack based backend for KeyV. Wait, what",
+  "description": "FS-Jetpack based backend for Keyv. Wait, what",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
@@ -31,7 +31,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/eaton/keyv-jetpack.git"
+    "url": "https://github.com/eaton/keyv-fs.git"
   },
   "devDependencies": {
     "@eslint/js": "^8.57.0",
