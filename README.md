@@ -1,6 +1,6 @@
-# KeyFS
+# KeyvJetpack
 
-Simple filesystem based storage for the [Keyv](https://keyv.org) key-value store. Each namespace is stored as a separate folder full of JSON files.
+Simple filesystem based storage for the [Keyv](https://keyv.org) key-value store; [FS-Jetpack](https://github.com/szwacz/)fs-jetpack is used due to unadulterated laziness.
 
 The existing [keyv-file](https://github.com/zaaack/keyv-file) module had some quirky decisions — in particular, every namespace was stored in a single JSON file, making large piles of data a little punishing.
 
@@ -9,7 +9,7 @@ The existing [keyv-file](https://github.com/zaaack/keyv-file) module had some qu
 Create a new KeyV instance and use a KeyFsStore instance as its `store` option. That's it.
 
 ```js
-import { KeyvFsStore } from 'keyv-fs';
+import { KeyvFsStore } from 'keyv-jetpack';
 import { Keyv } from 'keyv';
 
 const kv = new Keyv({ store: new KeyFsStore() });
