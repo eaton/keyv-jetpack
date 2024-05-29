@@ -1,6 +1,6 @@
 # KeyvJetpack
 
-Simple filesystem based storage for the [Keyv](https://keyv.org) key-value store; [FS-Jetpack](https://github.com/szwacz/)fs-jetpack is used due to unadulterated laziness.
+Simple filesystem based storage for the [Keyv](https://keyv.org) key-value store; [FS-Jetpack](https://github.com/szwacz/fs-jetpack) is used due to unadulterated laziness.
 
 The existing [keyv-file](https://github.com/zaaack/keyv-file) module had some quirky decisions — in particular, every namespace was stored in a single JSON file, making large piles of data a little punishing.
 
@@ -23,7 +23,7 @@ await kv.clear(); // Directory deleted
 Thanks to KeyV, things like expiring values and such are handled transparently. A custom storage directory can be used, or multiple namespaces to avoid collisions.
 
 ```js
-import { KeyvFsStore } from 'keyv-fs';
+import { KeyvFsStore } from 'keyv-jetpack';
 import { Keyv } from 'keyv';
 
 const kv = new Keyv({ store: new KeyFsStore({
